@@ -1,10 +1,10 @@
-$("document").ready(function () {
-  $("do_contact_form").on("submit", do_contact_form);
+$(document).ready(function () {
+  $("#do_contact_form").on("submit", do_contact_form);
   // Function to process the form
   function do_contact_form(event) {
     event.preventDefault();
 
-    let data = new FormData($("do_contact_form").get(0));
+    let data = new FormData($("#do_contact_form").get(0));
 
     let wrapper_msg = $(".wrapper_msg"),
       wrapper_contact_form = $(".wrapper_contact_form"),

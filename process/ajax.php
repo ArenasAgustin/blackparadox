@@ -31,9 +31,9 @@ if (empty($_POST['message']) || strlen($_POST['message']) < 5) {
     json_output(400, 'Ingrese un mensaje válido');
 }
 /* form data */
-$info['nombre'] = $_POST['nombre'];
+$info['nombre'] = $_POST['name'];
 $info['email'] = $_POST['email'];
-$info['mensaje'] = $_POST['mensaje'];
+$info['mensaje'] = $_POST['message'];
 $info['ip'] = $_SERVER['REMOTE_ADDR'];
 $info['telefono'] = $_POST['tel'];
 
